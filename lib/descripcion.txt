@@ -1,0 +1,18 @@
+- Actualmente en el projecto de la calculadora se esta utilizando una arquitectura o metodologia de arquitectura: 
+Clean Architecture + feature-first ya que al ser un proyecto con un solo objetivo que es calcular operaciones simples como suma, resta, multiplicación,
+division, entre otras. No se necesitan capas como data, domain u otra capa ya que no hay una fuente de datos externa, ejemplo: API o BD's. Lo que no hay que 
+separar la capa de negocio.
+
+En que consiste la metodologia Clean Architecture + feature-first: 
+
+Es la combinación de dos ideas separadas que trabajan juntas:
+
+Parte 1: Feature-first (el "contenedor")
+En lugar de organizar el código por tipo técnico (todos los modelos juntos, todas las pantallas juntas), 
+lo organizas por funcionalidad de negocio. Cada feature es como una "mini-app" dentro de tu app.
+
+Parte 2: Clean Architecture (lo que va DENTRO de cada feature)
+
+Es un principio de diseño de software (de Robert C. Martin) que dice: 
+separa tu código en capas concéntricas (que tengan el mismo centro), donde las capas internas no saben nada de las externas.
+La regla de oro es la regla de dependencia: las capas externas dependen de las internas, nunca al revés.
